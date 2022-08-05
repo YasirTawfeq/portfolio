@@ -1,0 +1,113 @@
+import Particles from "react-tsparticles";
+import "../index.css"
+import { loadFull } from "tsparticles";
+
+function BackGround() {
+     
+    const particlesInit = async (main) => {
+    await loadFull(main);
+  };
+
+  const particlesLoaded = (container) => {
+   
+  };
+
+  return (<>
+      <div className=" flex  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full items-center justify-center ">
+       <div className="flex flex-col justify-center text-center ">
+         <p className="text-2xl lg:text-4xl font-mono  text-white">Hello, I'm <span style={{color:"#FF1E00"}} >Yasir Tawfeq</span>.<br />
+           I am a Front End Developer.
+         </p>
+         <a href="#about" className=" flex justify-center bg-none hover:bg-[#FF1E00] transform duration-200 hover:border-[#FF1E00] border-2 p-0.5 lg:p-2 px-0 lg:px-5 mx-10 lg:mx-14 m-4 text-white  text-lg border-white rounded-sm ">
+          View my work  </a></div>    
+    </div>
+     <Particles
+       height={"700px"}
+       id="tsparticles"
+       init={particlesInit}
+       loaded={particlesLoaded}
+       options={{
+        fullScreen: {
+        enable: false,
+        zIndex: -999
+        },
+        background: {
+          color: {
+            value: "#2C3333",
+          },
+          
+        },
+        fpsLimit: 160,
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onHover: {
+              enable: true,
+              mode:"bubble"
+            },
+            resize: true,
+          },
+          modes: {
+            push: {
+              quantity: 2,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: "#FF1E00",
+          },
+          links: {
+            color: "#FEFBF6",
+            distance: 140,
+            enable: true,
+            opacity: 0.3,
+            width: 1,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            direction: "none",
+            enable: true,
+            outModes: {
+              default: "out",
+            },
+            random: false,
+            speed: 2,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 800,
+            },
+            value: 80,
+          },
+          opacity: {
+            value: 0.5,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            value:2,
+          },
+        },
+        detectRetina: true,
+      }}
+    />
+  
+        </>
+   
+  )
+}
+
+export default BackGround
