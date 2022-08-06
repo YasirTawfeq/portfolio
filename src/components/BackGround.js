@@ -1,6 +1,7 @@
 import Particles from "react-tsparticles";
 import "../index.css"
 import { loadFull } from "tsparticles";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function BackGround() {
      
@@ -18,11 +19,11 @@ function BackGround() {
          <p className="text-2xl lg:text-4xl font-mono  text-white">Hello, I'm <span style={{color:"#FF1E00"}} >Yasir Tawfeq</span>.<br />
            I am a Front End Developer.
          </p>
-         <a href="#about" className=" flex justify-center bg-none hover:bg-[#FF1E00] transform duration-200 hover:border-[#FF1E00] border-2 p-0.5 lg:p-2 px-0 lg:px-5 mx-10 lg:mx-14 m-4 text-white  text-lg border-white rounded-sm ">
-          View my work  </a></div>    
+         <AnchorLink  href="#about" className=" flex justify-center bg-none hover:bg-[#FF1E00] transform duration-200 hover:border-[#FF1E00] border-2 p-0.5 lg:p-2 px-0 lg:px-5 mx-10 lg:mx-14 m-4 text-white  text-lg border-white rounded-sm ">
+          View my work  </AnchorLink></div>    
     </div>
      <Particles
-       height={"700px"}
+       height={"800px"}
        id="tsparticles"
        init={particlesInit}
        loaded={particlesLoaded}
