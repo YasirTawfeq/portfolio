@@ -4,7 +4,7 @@ function Contact() {
   return (<>
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#383838" fill-opacity="1" d="M0,128L720,256L1440,96L1440,320L720,320L0,320Z"></path></svg>
       <div className="bg-[#383838]" >
-         <div className="text-3xl lg:text-4xl bg-[#383838] font-bold pt-8 text-center text-gray-100 ">CONTACT</div>
+         <div id="contact" className="text-3xl lg:text-4xl bg-[#383838] font-bold pt-8 text-center text-gray-100 ">CONTACT</div>
          <p className=" text-gray-100 text-center pt-8 bg-[#383838] ">Have a question or want to work together?</p>
          <div className="bg-[#383838] m-0 flex justify-center">
     

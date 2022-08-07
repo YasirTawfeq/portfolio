@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Navbar() {
     let activeStyle = {
@@ -8,7 +9,7 @@ function Navbar() {
 
   let activeClassName = "text-[#FF1E00]";
   return (
-    <div className="w-full h-12 border-b-2 border-[#FF1E00] bg-[#383838] sticky " >
+    <div className="w-full h-12 border-b-4 border-[#FF1E00] bg-[#383838]  " >
        <ul className="flex ml-0 lg:ml-16 text-md lg:text-lg text-white justify-between lg:justify-start items-center pt-2.5" >
         <li className=" mx-3  hover:text-[#FF1E00]">
            <NavLink to="/">
@@ -22,27 +23,27 @@ function Navbar() {
         <li className=" mx-3  hover:text-[#FF1E00]">
           <NavLink to="/about">
             {({ isActive }) => (
-              <span className={isActive ? activeClassName : activeStyle}>
+              <AnchorLink href="#about" className={isActive ? activeClassName : activeStyle}>
                 ABOUT
-              </span>
+              </AnchorLink>
             )}
           </NavLink>
         </li>
         <li className=" mx-3  hover:text-[#FF1E00]">
           <NavLink to="/projects">
             {({ isActive }) => (
-              <span className={isActive ? activeClassName : activeStyle}>
+              <AnchorLink href="#project" className={isActive ? activeClassName : activeStyle}>
                 PROJECTS
-              </span>
+              </AnchorLink>
             )}
           </NavLink>
         </li>
         <li className=" mx-3  hover:text-[#FF1E00]">
           <NavLink to="/contact">
             {({ isActive }) => (
-              <span className={isActive ? activeClassName : undefined}>
+              <AnchorLink href="#contact" className={isActive ? activeClassName : undefined}>
                 CONTACT
-              </span>
+              </AnchorLink>
             )}
           </NavLink>
         </li>

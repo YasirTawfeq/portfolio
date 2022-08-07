@@ -74,7 +74,7 @@ function About() {
         <div  className=" grid gride-cols-1 lg:grid-cols-2 xl:mx-20 ">
 
           <div className="flex flex-col items-center my-8 md:flex-row text-center w-full " >
-            <img className="w-60 h-60 border-8 border-[#FF1E00]  rounded-full" src="https://yasirtawfeq.netlify.app/img/pro.jpg" alt="pro photo" />
+            <img className="w-60 h-60 border-8 border-[#FF1E00]  rounded-full" src="https://yasirtawfeq.netlify.app/img/pro.jpg" alt="" />
             <p className=" font-serif w-full lg:w-80 text-center lg:text-left  text-lg p-5 pt-3 " >Hi, I'm <span className="text-[#FF1E00]" >Yasir</span>, I graduated from the University of Charmo in 2022 with a bachelor degree in Computer Science. My interests are in Front End Engineering, and I love to create beautiful and performant products with delightful user experiences.</p>
           </div>
           
@@ -82,7 +82,23 @@ function About() {
             <SkillBar skills={SKILLS6} height={20} />
           </div>
         </div>  
-             
+
+       <div className="flex justify-center w-full  ">
+
+        <div className="flex flex-col items-center " >
+         <div className="bg-[#FF1E00] p-1 rounded-full text-white px-2 text-3xl font-bold" >
+           UI
+         </div>
+         <div className="flex justify-center mt-4 flex-wrap" >
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6  " >Tailwind</div>
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 " >Material UI</div>
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 " >Bootstrap</div>
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 " >Bulma</div>
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 " >Ant Design</div>
+         </div>
+       </div>
+
+      </div>       
     </div>
   )
 }
