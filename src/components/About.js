@@ -89,12 +89,12 @@ function About() {
          <div className="bg-[#FF1E00] p-1 rounded-full text-white px-2 text-3xl font-bold" >
            UI
          </div>
-         <div className="flex justify-center mt-4 flex-wrap" >
-           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6  " >Tailwind</div>
-           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 " >Material UI</div>
-           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 " >Bootstrap</div>
-           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 " >Bulma</div>
-           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 " >Ant Design</div>
+         <div className="grid grid-cols-2 lg:grid-cols-5 mt-4 flex-wrap" >
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1 " >Tailwind</div>
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1" >Material UI</div>
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1" >Bootstrap</div>
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1" >Bulma</div>
+           <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1" >Ant Design</div>
          </div>
        </div>
 
