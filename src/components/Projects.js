@@ -37,7 +37,7 @@ function Projects() {
             <div className=" flex flex-col invisible group-hover:visible absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full items-center justify-center ">
               <p className="text-[#FF1E00] text-2xl font-bold " >SUSHI</p>
               <small className="text-[#FF1E00] font-bold " >Tailwind / React</small>
-               <a href="https://62f66cac5717b50097f7552b--frolicking-lokum-eadee0.netlify.app/"  target="_blank" rel="noreferrer" className="flex hover:bg-orange-500 duration-100 bg-[#FF1E00] p-1 px-8 font-semibold text-gray-200 text-lg rounded-sm mt-8 ">
+               <a href="https://soshiss.netlify.app/"  target="_blank" rel="noreferrer" className="flex hover:bg-orange-500 duration-100 bg-[#FF1E00] p-1 px-8 font-semibold text-gray-200 text-lg rounded-sm mt-8 ">
                 <div className="px-1" ><RemoveRedEyeIcon sx={{ fontSize: 25 ,color:"white" }} /></div>
                 <span className="mt-0.5" > View</span>
               </a>
