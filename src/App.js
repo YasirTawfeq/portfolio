@@ -5,10 +5,11 @@ import About from "./components/About"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+
 function App() {
   return (
   <>
-   <BackGround/>
+   <div className=" min-h-screen overflow-hidden " ><BackGround/></div>
    <Navbar/>
    <About/>
    <Projects/>

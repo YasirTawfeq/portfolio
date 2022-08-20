@@ -19,23 +19,23 @@ function About() {
     color: { bar: "#FF1E00", title: { text: "#fff", background: "#333333" } }
   },
   {
-    type: "Javascrips",
+    type: "Javascript",
     level: 85,
     color: { bar: "#FF1E00" , title: { text: "#fff", background: "#333333" } }
   },
   {
+    type: "Typescript",
+    level: 60,
+    color: { bar: "#FF1E00" , title: { text: "#fff", background: "#333333" } }
+  },
+  {
     type: "React",
-    level: 80,
+    level: 85,
     color: { bar: "#FF1E00" , title: { text: "#fff", background: "#333333" } }
   },
   {
     type: "Nextjs",
-    level: 35,
-    color: { bar: "#FF1E00" , title: { text: "#fff", background: "#333333" } }
-  },
-  {
-    type: "SCSS",
-    level: 70,
+    level: 80,
     color: { bar: "#FF1E00" , title: { text: "#fff", background: "#333333" } }
   }]
 
@@ -89,12 +89,13 @@ function About() {
          <div className="bg-[#FF1E00] p-1 rounded-full text-white px-2 text-3xl font-bold" >
            UI
          </div>
-         <div className="grid grid-cols-2 lg:grid-cols-5 mt-4 flex-wrap" >
+         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-8 flex-wrap" >
            <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1 " >Tailwind</div>
            <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1" >Material UI</div>
            <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1" >Bootstrap</div>
            <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1" >Bulma</div>
            <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1" >Ant Design</div>
+            <div className="text-2xl font-semibold text-[#383838] mx-4 lg:mx-6 my-1" >Materialize </div>
          </div>
        </div>
 
