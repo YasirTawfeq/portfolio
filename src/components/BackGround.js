@@ -29,7 +29,7 @@ function BackGround() {
               View my work 
             </AnchorLink>
            <button onClick={() =>downloadImage(require('../imgs/yasir.png'))}  className=" flex justify-center bg-none hover:bg-[#FF1E00] transform duration-200 hover:border-[#FF1E00] border-2 p-0.5 lg:p-2 px-2 lg:px-5   m-4 text-white  text-sm lg:text-lg border-white rounded-sm ">
-             Resume 
+             Download CV
            </button>
           </div>
           
