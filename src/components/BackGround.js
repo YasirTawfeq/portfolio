@@ -20,7 +20,7 @@ function BackGround() {
 
   return (<>
       <div className=" flex  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full items-center justify-center ">
-       <motion.div initial={{y:-350,opacity:0}} whileInView={{y:0,opacity:1}}  className="flex flex-col justify-center text-center ">
+       <motion.div initial={{y:-150,opacity:0}} whileInView={{y:0,opacity:1}}  className="flex flex-col justify-center text-center ">
          <p className="text-xl md:text-2xl lg:text-3xl font-mono  text-white">Hello, I'm <span style={{color:"#FF1E00"}} >Yasir Tawfeq</span>.<br />
            I am a Front End Developer.
          </p>
