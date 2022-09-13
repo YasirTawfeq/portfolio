@@ -4,6 +4,7 @@ import DevicesIcon from '@mui/icons-material/Devices';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import SkillBar from "react-skillbars";
+import { motion } from "framer-motion"
 
 function About() {
 
@@ -41,37 +42,37 @@ function About() {
 
   return (
     <div  className="md:mx-10">
-        <div id="about" className=" my-16 text-3xl lg:text-4xl font-bold  text-center text-[#FF1E00] ">ABOUT</div>
+        <motion.h1 initial={{x:-350,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:2}}  id="about" className=" my-16 text-3xl lg:text-4xl font-bold  text-center text-[#FF1E00] ">ABOUT</motion.h1>
        
         <div className="grid grid-cols-2 lg:grid-cols-4  item-center my-14 ">
 
-          <div className="flex flex-col   m-3 lg:m-0 items-center" >
+          <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.4}} className="flex flex-col   m-3 lg:m-0 items-center" >
             <div className=" bg-[#FF1E00] rounded-full p-4  "><SpeedIcon sx={{ fontSize: 60 ,color:"white" }}/></div>
             <div className="font-bold text-[#383838] text-xl" >Fast</div>
             <div className="text-sm lg:text-lg text-[#383838] w-44 lg:w-52 text-center " >Fast load times my highest priority.</div>
-          </div>
+          </motion.div>
 
-           <div  className="flex flex-col m-3 lg:m-0  items-center" >
+           <motion.div  initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.7}} className="flex flex-col m-3 lg:m-0  items-center" >
             <div className=" bg-[#FF1E00] rounded-full p-4  "><DevicesIcon sx={{ fontSize: 60 ,color:"white" }}/></div>
              <div className="font-bold text-[#383838] text-xl" >Responsive</div>
             <div className="text-sm lg:text-lg text-[#383838] w-44 lg:w-52 text-center " >My layouts will work on any device, big or small.</div>
-          </div>
+          </motion.div>
 
-           <div  className="flex flex-col m-3 lg:m-0  items-center" >
+           <motion.div  initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:1.1}} className="flex flex-col m-3 lg:m-0  items-center" >
             <div className=" bg-[#FF1E00] rounded-full p-4  "><LightbulbIcon sx={{ fontSize: 60 ,color:"white" }}/></div>
              <div className="font-bold text-[#383838] text-xl" >Intuitive</div>
             <div className="text-sm lg:text-lg text-[#383838] w-44 lg:w-52  text-center " >Strong preference for easy to use, intuitive UX/UI.</div>
-          </div>
+          </motion.div>
 
-           <div  className="flex flex-col m-3 lg:m-0  items-center" >
+           <motion.div  initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:1.5}} className="flex flex-col m-3 lg:m-0  items-center" >
             <div className=" bg-[#FF1E00] rounded-full p-4  "><RocketLaunchIcon sx={{ fontSize: 60 ,color:"white" }}/></div>
              <div className="font-bold text-[#383838] text-xl" >Dynamic</div>
             <div className="text-sm lg:text-lg text-[#383838] w-44 lg:w-52 text-center " > I love making pages come to life.</div>
-          </div>
+          </motion.div>
           
         </div>
 
-        <div  className=" grid gride-cols-1 lg:grid-cols-2 xl:mx-20 ">
+        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration:4}}  className=" grid gride-cols-1 lg:grid-cols-2 xl:mx-20 ">
 
           <div className="flex flex-col items-center my-8 md:flex-row text-center w-full " >
             <img className="w-60 h-60 border-8 border-[#FF1E00]  rounded-full" src="https://yasirtawfeq.netlify.app/img/pro.jpg" alt="" />
@@ -81,9 +82,9 @@ function About() {
           <div  className="my-16 mx-4">
             <SkillBar skills={SKILLS6} height={20} />
           </div>
-        </div>  
+        </motion.div>  
 
-       <div className="flex justify-center w-full  ">
+       <motion.div initial={{y:300,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:3}} className="flex justify-center w-full  ">
 
         <div className="flex flex-col items-center " >
          <div className="bg-[#FF1E00] p-1 rounded-full text-white px-2 text-3xl font-bold" >
@@ -99,7 +100,7 @@ function About() {
          </div>
        </div>
 
-      </div>       
+      </motion.div>       
     </div>
   )
 }

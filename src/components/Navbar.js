@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import MediaQuery from 'react-responsive'
 import MenuIcon from '@mui/icons-material/Menu';
+import { motion } from "framer-motion"
 
 function Navbar() {
    const [side,setSide] =useState(false);
@@ -14,7 +15,7 @@ function Navbar() {
     <div className="w-full h-12 border-b-4 border-[#FF1E00] bg-[#383838]  " >
       <MediaQuery minWidth={600}>
        <ul className="flex ml-0 lg:ml-16 text-md lg:text-lg text-white justify-between lg:justify-start items-center pt-2.5" >
-        <li className=" mx-3  hover:text-[#FF1E00]">
+        <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0,duration:2}} className=" mx-3  hover:text-[#FF1E00]">
            <NavLink to="/">
             {({ isActive }) => (
               <span className={isActive ? activeClassName : activeStyle}>
@@ -22,8 +23,8 @@ function Navbar() {
               </span>
             )}
           </NavLink>
-        </li>
-        <li className=" mx-3  hover:text-[#FF1E00]">
+        </motion.li>
+        <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.4,duration:2}} className=" mx-3  hover:text-[#FF1E00]">
           <NavLink to="/about">
             {({ isActive }) => (
               <AnchorLink href="#about" className={isActive ? activeClassName : activeStyle}>
@@ -31,8 +32,8 @@ function Navbar() {
               </AnchorLink>
             )}
           </NavLink>
-        </li>
-        <li className=" mx-3  hover:text-[#FF1E00]">
+        </motion.li>
+        <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:0.7,duration:2}} className=" mx-3  hover:text-[#FF1E00]">
           <NavLink to="/projects">
             {({ isActive }) => (
               <AnchorLink href="#project" className={isActive ? activeClassName : activeStyle}>
@@ -40,8 +41,8 @@ function Navbar() {
               </AnchorLink>
             )}
           </NavLink>
-        </li>
-        <li className=" mx-3  hover:text-[#FF1E00]">
+        </motion.li>
+        <motion.li initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{delay:1,duration:2}} className=" mx-3  hover:text-[#FF1E00]">
           <NavLink to="/contact">
             {({ isActive }) => (
               <AnchorLink href="#contact" className={isActive ? activeClassName : undefined}>
@@ -49,7 +50,7 @@ function Navbar() {
               </AnchorLink>
             )}
           </NavLink>
-        </li>
+        </motion.li>
       </ul>
      </MediaQuery>
 
